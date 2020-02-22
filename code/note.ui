@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>note</class>
+ <widget class="QDialog" name="note">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>790</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>790</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>电子元器件管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imageico.qrc">
+    <normaloff>:/title.ico</normaloff>:/title.ico</iconset>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>771</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView#tableView
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,175,255);
+    background:rgb(255,255,255,0);
+	color:rgb(255,255,255);
+	selection-color: rgb(255,255,255);
+	selection-background-color: rgb(49, 86, 111);
+	gridline-color: rgb(255, 255, 255,100);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_close
+{
+    border-radius: 15px;
+    /*border: 1px solid rgb(89, 153, 48);
+    background:rgb(0,0,0,0);*/
+	image: url(:/close.png);
+}
+
+QPushButton#pushButton_close:hover 
+{
+    background: #ff0000;
+	image: url(:/close.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>10</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QDateEdit" name="dateEdit_1">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDateEdit#dateEdit_1
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,175,255);
+    background:rgb(255,255,255,50);
+	color: rgb(255, 255, 255);
+}
+
+QDateEdit#dateEdit_1:hover 
+{
+    background:rgb(255,255,255,100);
+}
+
+QDateEdit#dateEdit_1:pressed
+{
+	background:rgb(40,81,130);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>到</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dateEdit_2">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDateEdit#dateEdit_2
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,175,255);
+    background:rgb(255,255,255,50);
+	color: rgb(255, 255, 255);
+}
+
+QDateEdit#dateEdit_2:hover 
+{
+    background:rgb(255,255,255,100);
+}
+
+QDateEdit#dateEdit_2:pressed
+{
+	background:rgb(40,81,130);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_find">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_find
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,175,255);
+    background:rgb(255,255,255,50);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#pushButton_find:hover 
+{
+    background:rgb(255,255,255,100);
+}
+
+QPushButton#pushButton_find:pressed
+{
+	background:rgb(40,81,130);
+}</string>
+      </property>
+      <property name="text">
+       <string>查找</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imageico.qrc"/>
+ </resources>
+ <connections/>
+</ui>

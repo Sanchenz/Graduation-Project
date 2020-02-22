@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QDialog" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>电子元器件管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imageico.qrc">
+    <normaloff>:/title.ico</normaloff>:/title.ico</iconset>
+  </property>
+  <widget class="QPushButton" name="pushButton_res">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>265</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_res
+{
+    border-radius: 2px;
+    /*border: 1px solid rgb(85, 170, 255,100);*/
+    background:rgb(255,255,255,0);/*transparent;*/
+	color: #000000;
+}
+
+QPushButton#pushButton_res:hover 
+{
+    background: rgb(255,255,255,0);
+}
+
+QPushButton#pushButton_res:pressed
+{
+	background:rgb(255,255,255,0);
+}</string>
+   </property>
+   <property name="text">
+    <string>快速注册</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_close
+{
+    border-radius: 15px;
+    /*border: 1px solid rgb(89, 153, 48);
+    background:rgb(0,0,0,0);*/
+	image: url(:/close.png);
+}
+
+QPushButton#pushButton_close:hover 
+{
+    background: #ff0000;
+	image: url(:/close.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_sql">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_sql
+{
+    border-radius: 15px;
+    /*border: 1px solid rgb(89, 153, 48);*/
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>150</y>
+     <width>281</width>
+     <height>113</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_user">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>账号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_user">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#lineEdit_user
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,170,255);
+    background:rgb(255,255,255,150);
+}
+
+QLineEdit#lineEdit_user:hover 
+{
+    background:rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_pass">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_pass">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#lineEdit_pass
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,170,255);
+    background:rgb(255,255,255,150);
+}
+
+QLineEdit#lineEdit_pass:hover 
+{
+    background:rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_login">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_login
+{
+    border-radius: 2px;
+    border: 1px solid rgb(85,170,255);
+    background:rgb(255,255,255,150);/*transparent;*/
+	color: #000000;
+}
+
+QPushButton#pushButton_login:hover 
+{
+    background: rgb(255,255,255,200);
+}
+
+QPushButton#pushButton_login:pressed
+{
+	background:rgb(85, 170, 255,150);
+}</string>
+      </property>
+      <property name="text">
+       <string>登陆</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imageico.qrc"/>
+ </resources>
+ <connections/>
+</ui>

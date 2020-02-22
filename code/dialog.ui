@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>230</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>电子元器件管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imageico.qrc">
+    <normaloff>:/title.ico</normaloff>:/title.ico</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>431</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft JhengHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>单号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_ordernum">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_ordernum
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_ordernum:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>封装</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_package">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_package
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_package:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>名称</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_name">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_name
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_name:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>数量</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_num">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_num
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_num:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>类型</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_type">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox#comboBox_type
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QComboBox#comboBox_type:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>电阻</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>电容</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>电感</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>二极管</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>三极管</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>变压器</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>传感器</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>场效应管</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>IC集成电路</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>开关</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>电源</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>单价</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_price">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_price
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_price:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>品牌</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_make">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_make
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_make:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>35</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>厂商</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit_company">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>135</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPlainTextEdit#plainTextEdit_company
+{
+    border-radius: 2px;
+    /*border: 2px solid rgb(255,255,255,50);*/
+    background:rgb(255,255,255,150);
+}
+
+QPlainTextEdit#plainTextEdit_company:hover 
+{
+    background: rgb(255,255,255,255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPushButton" name="pushButton_add">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#pushButton_add
+{
+    border-radius: 2px;
+    /*border: 1px solid rgb(85, 170, 255,100);*/
+    background:rgb(255,255,255,150);/*transparent;*/
+	color: #000000;
+}
+
+QPushButton#pushButton_add:hover 
+{
+    background: rgb(255,255,255,200);
+}
+
+QPushButton#pushButton_add:pressed
+{
+	background:rgb(85, 170, 255,150);
+}</string>
+        </property>
+        <property name="text">
+         <string>修改电子元器件信息</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>5</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_close
+{
+    border-radius: 15px;
+    /*border: 1px solid rgb(89, 153, 48);
+    background:rgb(0,0,0,0);*/
+	image: url(:/close.png);
+}
+
+QPushButton#pushButton_close:hover 
+{
+    background: #ff0000;
+	image: url(:/close.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imageico.qrc"/>
+ </resources>
+ <connections/>
+</ui>
